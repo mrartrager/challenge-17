@@ -25,7 +25,16 @@ Here is the Regex (Regular Expression) That I will be going in detail about:
 
 ## Regex Components
 
+Everything below goes into and breakers down all the components of a Hex Value Regex. Let’s start with the anchors. 
+
 ### Anchors
+
+Anchors of a regex are to show the start and the end of a string, so for example in the hex regex listed above, the anchors would be ^ and $. 
+
+The ^ indicates the start of the string 
+The $ indicates the end of the string
+Note: The / at the beginning and end of the regex indicate the start and end of the regex, not the string.
+
 
 ### Quantifiers
 
