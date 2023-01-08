@@ -52,14 +52,27 @@ In my opinion character classes and bracket expressions are very silimair, You�
 
 This is saying our regex will have any lowercase (because its a-z it’s literally searching for the entire alphabet, you could do a-g and that would show any hex value with letters a-g) and then any number 0-9. Again if you wanted a more narrow search you can shrink the distance between values so just as I said instead of searching through the entire alphabet, you could just search for numbers 1-4. 
 
-
-
-
-### Flags
-
 ### Grouping and Capturing
 
+Grouping takes everything between the ( ) and finds a match according to what’s inside them. Grouping things together with parenthesis in a regex will treat everything in between the paranthesis as one single unit. So for ours: [a-z0-9_\.-]+  ,  [\da-z\.-]+  ,  [a-z\.]{2,6}  
+Since all three of these are in paranthesis, we will get three different units sent back. 
+
+
 ### Bracket Expressions
+
+Backer Expressions are the contents of the regex that are encapsulated in between [ ]. The content in between the brackets are used to indicate what we went to match. So in the Regex that I am using the snippet in between the brackets would be the bracket expression: [a-z0-9_\.-]
+
+As i said earlier I feel that bracket expressions and character classes are similar, to my understanding (Which to be fair is not at 100% on this) but to my understanding, the bracket expression is, there to actually run the code provided by the character classes. 
+
+But what is [a-z0-9_\.-]. 
+
+a-z is looking for a hex code that could have any letters a through z in them so for example #fff or #2596be. The fff and be would show up. But we also have a few other parameters in the bracket expression not just letters a through z 
+0-9 will apply the search for any hex that has a number 1 through 9 in it. This does it in unisin with letters a-z as well so #fff would not show up do to the fact that it only has letters but no numbers but #2596be would show up.
+And lastly the underscore, same as the letters and numbers will work inunasin and search for any hex code that would be using a underscore. 
+
+So in short we will be matching any hex value that has any letters a through z, along with any numbers 0 through 9, and along with any hex code that is using a underscore. 
+
+
 
 ### Greedy and Lazy Match
 
