@@ -38,9 +38,22 @@ Note: The / at the beginning and end of the regex indicate the start and end of 
 
 ### Quantifiers
 
+Quantifiers are pretty much what they sound like. But I won't be that person that describes a word, using the word you’re trying to understand. Quantifiers pretty much show how many times the following pattern matches. 
+
 ### OR Operator
 
+The OR Operator of regex is a pretty simple concept to understand. The OR Operator can be found  in { } in the Regex expression. For the one provided our OR Operator would be the: {2, 6} found towards the end of the expression. 
+
+This allows the OR Operator to match a  hex value that has either a 2 or a 6 in it.  
+
 ### Character Classes
+
+In my opinion character classes and bracket expressions are very silimair, You’ll learn about bracket expressions soon. Character classes and essentially the parameters of what will be matched with your regex. So for example our is: a-z0-9_\.-
+
+This is saying our regex will have any lowercase (because its a-z it’s literally searching for the entire alphabet, you could do a-g and that would show any hex value with letters a-g) and then any number 0-9. Again if you wanted a more narrow search you can shrink the distance between values so just as I said instead of searching through the entire alphabet, you could just search for numbers 1-4. 
+
+
+
 
 ### Flags
 
