@@ -75,13 +75,13 @@ So in short we will be matching any hex value that has any letters a through z, 
 
 
 ### Greedy and Lazy Match
+I find it hilarious that this aspect is called Greedy and Lazy. It makes sense as to why they are called that, but it's still funny to me. 
 
-### Boundaries
+Greedy is referring to the idea that the match of the regex will be the longest possible string it can find. And Lazy is as you can most likely presume, will find the shortest possible string. I would say most of the time any regex will fall under the greedy category. 
 
-### Back-references
-
-### Look-ahead and Look-behind
-
+ 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Matthew Waldron (Wally)
+
+Here is a link my github: https://github.com/mrartrager
